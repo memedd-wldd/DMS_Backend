@@ -1,0 +1,85 @@
+[
+  {
+    "roleName": "Admin",
+    "screenRestriction": [],
+    "fieldRestriction": []
+  },
+  {
+    "roleName": "Management",
+    "screenRestriction": [
+      {
+        "sectionName":"userManagement",
+        "access":"r"
+      }
+    ],
+    "fieldRestriction": []
+  },
+  {
+    "roleName": "Campaign",
+    "screenRestriction": [
+      {
+        "sectionName":"userManagement",
+        "access":"n"
+      },
+      {
+        "sectionName":"pageStats",
+        "access":"r"
+      }
+    ],
+    "fieldRestriction": [
+
+    ]
+  },
+  {
+    "roleName": "DistributionPoc",
+    "screenRestriction": [
+      {
+        "sectionName":"userManagement",
+        "access":"n"
+      }
+    ],
+    "fieldRestriction": [
+      {
+        "collectionName":"commercial",
+        "fields":[
+          {
+            "fieldName":"margin",
+            "accessType":"n"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "roleName": "Content",
+    "screenRestriction": [
+      {
+        "sectionName":"userManagement",
+        "access":"n"
+      },
+      {
+        "sectionName":"inventoryManagement",
+        "access":"r"
+      },
+      {
+        "sectionName":"commercials",
+        "access":"n"
+      }
+    ],
+    "fieldRestriction": []
+  },
+  {
+    "roleName": "DistributionUser",
+    "screenRestriction": [
+      {
+        "sectionName":"userManagement",
+        "access":"n"
+      },
+      {
+        "sectionName":"commercials",
+        "access":"n"
+      }
+    ],
+    "fieldRestriction": []
+  }
+]

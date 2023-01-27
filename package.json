@@ -1,0 +1,33 @@
+{
+  "name": "wldd-backend",
+  "version": "1.0.0",
+  "description": "wldd cms backend",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "NODE_ENV='dev' nodemon app.js"
+  },
+  "author": "Techweirdo",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1064.0",
+    "axios": "^1.2.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "custom-env": "^2.0.1",
+    "deep-object-diff": "^1.1.7",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "google-auth-library": "^8.0.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.5",
+    "nodemailer": "^6.7.2",
+    "socket.io": "^4.5.1",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
